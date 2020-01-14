@@ -1,8 +1,8 @@
 <?php
-$server = 'localhost';
-$username = 'root';
-$password = 'root';
-$database = 'auth';
+$server = 'db-homebrew.mysql.uhserver.com';
+$username = 'gabrieldocs';
+$password = '@Lajg32d559862';
+$database = 'db_homebrew';
 
 try{
 	$conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
