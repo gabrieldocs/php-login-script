@@ -1,0 +1,50 @@
+.btn { border-radius: 40px;}
+img { opacity: 0.2; align-self: center;}
+.card { border-radius: 20px; border: none; overflow: hidden; min-height: 400px;}
+.bg-dark {  background-color: #000 !important;}
+.pre{ width: 110px; height: 6px; border-radius: 100px;}
+.text-primary{color: #6a66dd !important;}
+/*.bg-primary, .btn-primary { background-color: #6a66dd; }*/
+/*.bg-danger {  background-color: #ea2340 !important;}*/
+.bg-violet { background-color: #de1bb5;}
+.bg-danger { background-color: #e30425 !important;}
+.bg-purple { background-color: #5d1049 !important; color: #fff; }
+.bg-purple-lte { background-color: #720d5d !important;}
+.bg-purple-dk { background-color: #4e0d3a !important;}
+
+.bg-lemon     { background-color: #0ab68b !important; }
+.bg-lemon-lte { background-color: #92de8b !important;}
+.bg-lemon-dk  { background-color: #028174 !important;}
+.bg-lemon-accent { background-color: #ffe3b3 !important;}
+
+.login { border-radius: 20px;}
+
+.bg-grape     { background-color: #8d39ec !important; color: #fff; }
+.bg-grape-lte { background-color: #aa4ff6 !important;}
+.bg-grape-dk  { background-color: #7827e6 !important;}
+.bg-grape-accent { background-color: #ea80fc !important;}
+
+.jumbotron { background-color: transparent !important;}
+.card-footer { border-top: none !important; background-color: transparent !important;}
+.bg-dark { background-color: #1c1c24 !important;}    
+.float { position: fixed; bottom: 72px; right: 16px; z-index: 998;}
+.card .btn, .float.btn { border-radius: 40px;}
+.jumbotron { border-radius: 8px !important; margin-bottom: 0px !important;}
+.card-footer { background-color: transparent !important;}
+*{ font-family: 'Alata', sans-serif;}
+.bg-purple-mul{ background-color: #803c70;}
+/*p { font-family: 'Roboto', sans-serif;}*/
+textarea { height: 150px !important; margin-bottom: 20px; }
+/*body { background-color: #f9f9f9;}*/
+nav { border-bottom: none; border-top-right-radius: 20px; border-top-left-radius: 20px;}
+.control-room { 
+    display: inline  !important;
+    }
+.inner-card { min-height: 350px;}
+@media (max-width: 910px) {
+    .control-room { 
+    display: none !important;
+    }
+}
+.bg-grey { background-color: #dedede;}
+body { background-color: #f8f8f8;}

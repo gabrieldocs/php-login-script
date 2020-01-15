@@ -1,63 +1,80 @@
 <?php
+	session_start();
+	//require '../workers/previews/views/head.php';
+	require 'database.php';
+	require 'previews/head.view.php';
 
-session_start();
 
-if( isset($_SESSION['user_id']) ){
-	header("Location: /ini/workers/");
-}
+	if (isset($_SESSION['user_id'])) {
+		exit(header("Location: login.php"));
 
-require 'database.php';
-
-if(!empty($_POST['email']) && !empty($_POST['password'])):
-	
-	$records = $conn->prepare('SELECT id,email,password FROM users WHERE email = :email');
-	$records->bindParam(':email', $_POST['email']);
-	$records->execute();
-	$results = $records->fetch(PDO::FETCH_ASSOC);
-
-	$message = '';
-
-	if(count($results) > 0 && password_verify($_POST['password'], $results['password']) ){
-
-		$_SESSION['user_id'] = $results['id'];
-		header("Location: /");
-
-	} else {
-		$message = 'Sorry, those credentials do not match';
 	}
+	
 
-endif;
-
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login Below</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-</head>
-<body>
-
-	<div class="header">
-		<a href="/">Your App Name</a>
-	</div>
-
-	<?php if(!empty($message)): ?>
-		<p><?= $message ?></p>
-	<?php endif; ?>
-
-	<h1>Login</h1>
-	<span>or <a href="register.php">register here</a></span>
-
-	<form action="login.php" method="POST">
+	if(!empty($_POST['email']) && !empty($_POST['password'])):
 		
-		<input type="text" placeholder="Enter your email" name="email">
-		<input type="password" placeholder="and password" name="password">
+		$records = $conn->prepare('SELECT id,email,password FROM users WHERE email = :email');
+		$records->bindParam(':email', $_POST['email']);
+		$records->execute();
+		$results = $records->fetch(PDO::FETCH_ASSOC);
 
-		<input type="submit">
+		$message = '';
 
-	</form>
+		if(count($results) > 0 && password_verify($_POST['password'], $results['password']) ){
+			$_SESSION['user_id'] = $results['id'];
+			#header('Location: ../workers/previews/index.php');
+			exit(header('Location: index.php'));
+			
 
-</body>
-</html>
+		} else {
+			$message = 'Desculpe, credenciais não encontradas!';
+		}
+	endif;
+
+?>			
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/main.css">
+	<?php if(!empty($message)): ?>
+		<div class="p-3 alert alert-success alert-dismissible fade show" role="alert">
+			<?=$message?>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	<?php endif; ?>
+	
+	<section class = "container">
+		<div class = "row d-flex justify-content-center"> 
+			<div class = "col-md-12 mt-5 text-white">
+				<center>
+					<h1>Ecossistema Aiamis</h1>
+					<div class = "pre bg-white mt-5 mb-3"></div>
+				</center>
+			</div>
+			<div class = "col-md-4">
+				<div class = "card mt-5 mb-3"> 
+					<div class = "card-body"> 
+						<center> 
+							<i class = "fab fa-instagram fa-3x mt-3 mb-1"></i>
+							<h1 class = "mb-3">Credenciais</h1>
+							<div class = "pre bg-dark mt-3 mb-3">
+						</center>
+						<form action="login.php" method="POST">
+							<label>E-mail ou Nome de usuário</label>					
+							<input class = "form-control mb-3" type="text" placeholder="Enter your email" name="email">
+							<label>Senha</label>					
+							<input class = "form-control mb-3" type="password" placeholder="and password" name="password">
+						</div>
+					<div class = "card-footer">
+							<button type="submit" class = "btn bg-lemon btn-block">Entrar</button>
+						</form>
+					</div>
+				</div>
+				<div class = "login bg-white p-3" align = "center">
+					<span><a href="register.php">Criar nova conta</a></span>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<?php require '../workers/previews/views/footer.php'; ?>

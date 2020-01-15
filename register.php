@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+require 'previews/head.view.php'; 
 
 if( isset($_SESSION['user_id']) ){
 	header("Location: /");
@@ -28,35 +29,45 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 endif;
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Register Below</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-</head>
-<body>
-
-	<div class="header">
-		<a href="/">Your App Name</a>
-	</div>
-
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/main.css">
 	<?php if(!empty($message)): ?>
 		<p><?= $message ?></p>
 	<?php endif; ?>
 
-	<h1>Register</h1>
-	<span>or <a href="login.php">login here</a></span>
-
-	<form action="register.php" method="POST">
-		
-		<input type="text" placeholder="Enter your email" name="email">
-		<input type="password" placeholder="and password" name="password">
-		<input type="password" placeholder="confirm password" name="confirm_password">
-		<input type="submit">
-
-	</form>
-
-</body>
-</html>
+<section class = "container">
+	<div class = "row d-flex justify-content-center">	
+		<div class = "col-md-12 mt-5 text-white">
+			<center>
+				<h1>Ecossistema Aiamis</h1> 
+				<div class = "pre bg-white mt-5 mb-5"></div>
+			</center>
+		</div>
+		<div class = "col-md-4"> 
+			<div class = "card mt-5 mb-4"> 
+				<div class = "card-body">
+					<center> 
+						<i class  = "fa fa-comment-alt-smile fa-3x mt-3 text-success"></i>
+						<h1>Cadastrar</h1>
+						<div class = "pre bg-dark mt-3 mb-3">
+					</center>
+					
+					<form action="register.php" method="POST">
+						<label>E-mail</label>
+						<input class  = "form-control mb-3" type="text" placeholder="Enter your email" name="email">
+						<label>Senha</label>
+						<input class  = "form-control mb-3" type="password" placeholder="and password" name="password">
+						<label>Confirme sua senha</label>
+						<input class  = "form-control mb-3" type="password" placeholder="confirm password" name="confirm_password">					
+				</div> 
+				<div class = "card-footer">
+						<input class = "btn btn-block bg-lemon" type="submit" > 
+					</form>
+				</div>
+			</div>
+			<div class = "login bg-white p-3" align = "center">				
+				<span><a href="login.php">Entrar no Ecossistema Aiamis</a></span>
+			</div>
+		</div>
+	</div>
+</section>
+<?php require('../workers/previews/views/footer.php'); ?>
