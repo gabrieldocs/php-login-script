@@ -116,5 +116,5 @@
 
 <?php 
 
-	require(workers/previews/views/footer.php');
+	require('workers/previews/views/footer.php');
 ?>
