@@ -54,7 +54,7 @@
 				<div class = "card mt-5 mb-3"> 
 					<div class = "card-body"> 
 						<center> 
-							<i class = "fab fa-instagram fa-3x mt-3 mb-1"></i>
+							<i class = "fad fa-computer-retro fa-3x mt-3 mb-1"></i>
 							<h1 class = "mb-3">Credenciais</h1>
 							<div class = "pre bg-dark mt-3 mb-3">
 						</center>
