@@ -97,7 +97,7 @@
 					</center>
 						<p align = "justify">Esta página foi criada para a equipe de Desenvolvimento e encontra-se em visualização prévia. Para fazer login no Ecossistema de Aprendizagem Aiamis & Central de Comunicação Interna</p>
 					<center>
-						<a href="register.php">Criar nova conta</a>
+						<!--a href="register.php">Criar nova conta</a-->
 					</center>
 				</div>
 				<div class = "card-footer">
