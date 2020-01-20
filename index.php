@@ -25,6 +25,7 @@
 ?>
 
 <link rel = "stylesheet" type = "text/css" href = "assets/css/main.css">
+
 <section class = "container text-dark ">
 	<div class = "row mb-5 d-flex justify-content-center">
 		<div class = "col-md-12 mt-5 text-white">
@@ -37,7 +38,7 @@
 		<?php if( !empty($user) ): ?>
 		<?php include "previews/nav.view.php";?>
 		<div class = "float">
-			<a class = "btn btn-lg bg-lemon-lte"><i class = "fa fa-user-circle"></i> Editar perfil</a>
+			<a class = "btn btn-lg bg-white shadow-sm"><i class = "fa fa-user-circle"></i> Editar perfil</a>
 		</div>
 		<div class = "col-md-4">
 			<div class = "card mt-5 mb-3">
@@ -52,7 +53,7 @@
 						<br /><br />
 				</div>
 				<div class = "card-footer"> 
-					<a class = "btn btn-block bg-lemon" href="logout.php">Sair do Ecossistema</a>
+					<a class = "btn btn-block btn-primary" href="logout.php">Sair do Ecossistema</a>
 				</div>
 			</div>
 		</div>		
@@ -67,7 +68,7 @@
 					</center>			
 				</div>
 				<div class = "card-footer">
-				<a class = "btn btn-block bg-lemon" href = "../workers/previews/index.php">Acessar</a>
+				<a class = "btn btn-block btn-primary" href = "../workers/previews/index.php">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -82,7 +83,7 @@
 					</center>			
 				</div>
 				<div class = "card-footer">
-				<a class = "btn btn-block bg-lemon" href = "../workers/previews/index.php">Acessar</a>
+				<a class = "btn btn-block btn-primary" href = "../workers/previews/index.php">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -102,7 +103,7 @@
 				</div>
 				<div class = "card-footer">
 					<center>	
-						<a class = "btn bg-lemon btn-block"href="login.php"><i class = "fa fa-user-lock"></i> Área Restrita</a>
+						<a class = "btn btn-primary btn-block"href="login.php"><i class = "fa fa-user-lock"></i> Área Restrita</a>
 					</center>
 				</div>
 			</div>

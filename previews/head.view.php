@@ -16,6 +16,7 @@
     </script>
     <link rel = "stylesheet" type = "text/css" href = "../assets/css/main.css">
     <style>
+        .bg-navy-dk { background-color: #333d79 !important;}
     /*.card { background-color: rgba(255, 255, 255, 1);}
     .card h1, .card p { opacity: 1;} 
     body {
@@ -25,4 +26,11 @@
     }
     */
     </style>
-<body class = "bg-lemon">
+<body class = "bg-primary">
+<div class = "top p-3 bg-primary shadow-sm text-white" style = "">
+  <div class = "container d-flex justify-content-between">
+    <h5> AIAMIS </h5>
+    <a class = "btn bg-white text-primary"><i class = "fa fa-user-circle"></i> Sair do Ecossistema</a>
+  </div>
+</div>
+<!-- Componentes em primeiro plano -->

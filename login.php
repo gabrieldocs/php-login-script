@@ -65,7 +65,7 @@
 							<input class = "form-control mb-3" type="password" placeholder="Senha" name="password">
 						</div>
 					<div class = "card-footer">
-							<button type="submit" class = "btn bg-lemon btn-block">Entrar</button>
+							<button type="submit" class = "btn btn-primary btn-block">Entrar</button>
 						</form>
 					</div>
 				</div>
