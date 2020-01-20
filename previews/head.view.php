@@ -16,8 +16,14 @@
     </script>
     <link rel = "stylesheet" type = "text/css" href = "../assets/css/main.css">
     <style>
-    /* .card { opacity: 0.4;}
-    .card h1, .card p { opacity: 1;} */
+    /*.card { background-color: rgba(255, 255, 255, 1);}
+    .card h1, .card p { opacity: 1;} 
+    body {
+        background-image: url("https://images6.alphacoders.com/805/thumb-1920-805656.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    */
     </style>
 <body class = "bg-lemon">
 <?php  include 'previews/nav.view.php'; ?>

@@ -29,6 +29,7 @@
 	<div class = "row mb-5 d-flex justify-content-center">
 		<div class = "col-md-12 mt-5 text-white">
 			<center>
+				<!-- img src = "assets/media/logo.png" width = "120px" -->
 				<h1>Ecossistema de Aprendizagem</h1> 
 				<div class = "pre bg-white mt-5 mb-3"></div>
 			</center>
@@ -51,7 +52,7 @@
 						<br /><br />
 				</div>
 				<div class = "card-footer"> 
-					<a class = "btn btn-block bg-lemon" href="/ini/log/logout.php">Sair do Ecossistema</a>
+					<a class = "btn btn-block bg-lemon" href="logout.php">Sair do Ecossistema</a>
 				</div>
 			</div>
 		</div>		
