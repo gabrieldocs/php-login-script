@@ -67,7 +67,7 @@
 					</center>			
 				</div>
 				<div class = "card-footer">
-				<a class = "btn btn-block bg-lemon" href = "workers/previews/index.php">Acessar</a>
+				<a class = "btn btn-block bg-lemon" href = "../workers/previews/index.php">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -82,7 +82,7 @@
 					</center>			
 				</div>
 				<div class = "card-footer">
-				<a class = "btn btn-block bg-lemon" href = "workers/previews/index.php">Acessar</a>
+				<a class = "btn btn-block bg-lemon" href = "../workers/previews/index.php">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -116,5 +116,5 @@
 
 <?php 
 
-	require('workers/previews/views/footer.php');
+	require('../workers/previews/views/footer.php');
 ?>
