@@ -35,7 +35,7 @@
 			</center>
 		</div>
 		<?php if( !empty($user) ): ?>
-		
+		<?php include "previews/nav.view.php";?>
 		<div class = "float">
 			<a class = "btn btn-lg bg-lemon-lte"><i class = "fa fa-user-circle"></i> Editar perfil</a>
 		</div>

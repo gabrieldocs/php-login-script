@@ -26,4 +26,3 @@
     */
     </style>
 <body class = "bg-lemon">
-<?php  include 'previews/nav.view.php'; ?>
