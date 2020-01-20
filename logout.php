@@ -6,4 +6,4 @@ session_unset();
 
 session_destroy();
 
-header("Location: /ini/log/index.php");
+header("Location: index.php");

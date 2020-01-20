@@ -60,9 +60,9 @@
 						</center>
 						<form action="login.php" method="POST">
 							<label>E-mail ou Nome de usuário</label>					
-							<input class = "form-control mb-3" type="text" placeholder="Enter your email" name="email">
+							<input class = "form-control mb-3" type="text" placeholder="Entre com seu e-mail" name="email">
 							<label>Senha</label>					
-							<input class = "form-control mb-3" type="password" placeholder="and password" name="password">
+							<input class = "form-control mb-3" type="password" placeholder="Senha" name="password">
 						</div>
 					<div class = "card-footer">
 							<button type="submit" class = "btn bg-lemon btn-block">Entrar</button>
